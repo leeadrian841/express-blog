@@ -5,6 +5,12 @@ var express = require('express')
 var app = express()
 var port = 3000
 
+// require path
+var path = require('path')
+
+// middleware for all requests
+app.use('/', routes)
+
 // set the required routes
 var routes = require('./routes/index')
 var users_routes = require('./routes/users')
