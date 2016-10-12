@@ -9,17 +9,19 @@ var port = 3000
 var path = require('path')
 
 // middleware for all requests
-app.use('/', routes)
+// app.use('/', routes)
+
+app.set('view engine', 'ejs')
 
 // set the required routes
-var routes = require('./routes/index')
+// var routes = require('./routes/index')
+// var posts_routes = require('./routes/posts')
 var users_routes = require('./routes/users')
-var posts_routes = require('./routes/posts')
 
 // set the middlewares for routes
-app.use('/', routes)
+// app.use('/', routes)
+// app.use('/posts', posts_routes)
 app.use('/users', users_routes)
-app.use('/posts', posts_routes)
 
 // take this out from app.js
 

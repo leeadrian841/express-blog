@@ -1,3 +1,14 @@
-<% include partials/header.ejs  %>
-
-<% include partials/footer.ejs  %>
+<% include ../partials/header.ejs  %>
+  <h1>New User</h1>
+  <form method="post" action="/users">
+    <div class="form-group">
+      <label for="InputEmail">Email address</label>
+      <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <label for="InputUsername">Password</label>
+      <input type="text" class="form-control" id="username" placeholder="Username">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+<% include ../partials/footer.ejs  %>
