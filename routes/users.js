@@ -12,11 +12,19 @@ router.get('/', function (req, res) {
 }).get('/:id/new', function (req, res) {
   res.send('Hi, ' + req.params.id + '!. Type your new post here.')
 }).get('/:id/edit', function (req, res) {
+  res.render('users/edit')
   res.send('Hi, ' + req.params.id + '!. Edit your new post here.')
 })
 
 router.post('/', function (req, res) {
   res.send(req.body)
+  // var posted_username = req.body.username
+  // var posted_password = req.body.password
+  // res.send('posted username is ' + posted_username + ' and posted password is: ' + posted_password)
+})
+
+router.put('/:id', function (req, res) {
+  res.send('edit movie' + req.params.id)
 })
 
 router.delete('/:id', function (req, res) {

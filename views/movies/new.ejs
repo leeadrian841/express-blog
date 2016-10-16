@@ -1,0 +1,14 @@
+<% include ../partials/header.ejs  %>
+  <h1>New Movie</h1>
+  <form method="post" action="/movies">
+    <div class="form-group">
+      <label for="InputMovieName">Movie Name</label>
+      <input type="text" class="form-control" id="movie_name" name="MovieName" placeholder="New Movie Name">
+    </div>
+    <div class="form-group">
+      <label for="InputMovieYear">Movie Year</label>
+      <input type="text" class="form-control" id="movie_year" name="MovieYear" placeholder="New Movie Year">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+<% include ../partials/footer.ejs  %>

@@ -1,0 +1,17 @@
+<% include ../partials/header.ejs  %>
+
+<h1>EDIT USER DETAILS</h1>
+
+<form method="post" action="/movies">
+  <div class="form-group">
+    <label for="name">Username</label>
+    <input type="text" class="form-control" id="name" name="username" placeholder="User Name">
+  </div>
+  <div class="form-group">
+    <label for="year">Password</label>
+    <input type="password" class="form-control" id="year" name="userpassword" placeholder="User Year">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<% include ../partials/footer.ejs  %>
